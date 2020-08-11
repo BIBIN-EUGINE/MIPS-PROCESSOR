@@ -1,0 +1,18 @@
+force instruction "00000000000111100000000000000011"; --xor R-type instruction
+run 100ns;
+force instruction "00000000000111100000000000000101"; --jr R-type instruction
+run 100ns;
+force instruction "00100000000111100000000000000011"; --addi
+run 100ns;
+force instruction "01000000000111100000000000000011"; --andi
+run 100ns;
+force instruction "01100000000111100000000000000011"; --beq
+run 100ns;
+force instruction "10000000000111100000000000000011"; --lw
+run 100ns;
+force instruction "10100000000111100000000000000011"; --sw
+run 100ns;
+force instruction "11000000000111100000000000000011"; --subi
+run 100ns;
+force instruction "00000000000000000000000000000000"; --nop
+run 100ns;
